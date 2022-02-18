@@ -4,7 +4,7 @@
     <!-- Used by Key Board-->
     <meta charset="utf-8">
 
-    <title>Flexbox, 3-column</title>
+    <title>Flexbox, 3-Column</title>
 
     <!-- Used by Google Search -->
     <meta name="author" content="Aastha Sahi">
@@ -25,33 +25,42 @@
     <!-- Already specified in the charset above-->
 
     <style>
-    div {border: thin dotted red;} </style>
-    div {border: thin dotted red;}
-    * {
-      box-sizing: border-box;
-    }
-    .header {
-      border: 1px solid red;
-    }
-    .menu {
-      width: 25%;
-      float: left;
-      padding: 15px;
-      border: 1px solid red;
-    }
-    .main {
-      width: 75;
-      float: left;
-      padding: 15px;
-      border: 1px solid red;
-    }
+      div {border: thin dotted red;}
+      * {
+        box-sizing: border-box;
+      }
+      .header {
+        border: 1px solid red;
+      }
+      .menu {
+        width: 25%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+      .main {
+        width: 50%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+      .aside {
+        width: 25%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+      .footer {
+        border: 1px solid red;
+        padding: 15px
+      }
+    </style>
 
   </head>
   <body>
-    <header>INDEX File as Flexbox, 3-column</header>
-    <nav><h3>Navigation with no viewport in a h3-tag</h3></nav>
-    <aside><p>This is the aside space with no view port in a p-tag</p></aside>
-    <section> <h3 style="font-size:2.5vw">Section 1</h3>
+    <header class="header">INDEX File as Flexbox, 3-Column</header>
+    <nav class="menu"><h3>Navigation with no viewport in a h3-tag</h3></nav>
+    <section class="main"> <h3 style="font-size:2.5vw">Section 1</h3>
       <article>
         <p style="font-size:1vw">Here are hyperlinks to the mandatory Experiment Pages</p>
         <!-- See the HTML .txt document for a summary-->
@@ -68,8 +77,12 @@
         </ol>
       </article>
     </section>
+    <aside class="aside">
+      <p>This is the aside space with no view port in a p-tag</p>
+      <br><br><br><br><br><br><br><br>
+    </aside>
   </body>
-  <footer>
+  <footer class="footer">
     <blockquote cite="https://www.brainyquote.com/quotes/mitch_kapor_163583"><!-- Date Accessed 20220208--></blockquote>
     <p>
       <strong>Getting information off the Internet is like taking a drink from a firehose.</strong>
